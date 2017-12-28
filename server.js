@@ -4,7 +4,7 @@ var app = express();
 var ig = require('instagram-node').instagram();
 
 //look for site resources
-app.use(express.static(_dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 
 // set view engine to ejs
 app.set('view engine', 'ejs');
